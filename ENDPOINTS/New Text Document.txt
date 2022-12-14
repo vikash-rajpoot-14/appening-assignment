@@ -1,0 +1,5 @@
+SIGN UP ENDPOINT(POST) = http://localhost:5000/signup
+
+LOGIN ENDPOINT(POST) = http://localhost:5000/login
+
+GETUSERS ENDPOINT(GET) = http://localhost:5000/getUsers

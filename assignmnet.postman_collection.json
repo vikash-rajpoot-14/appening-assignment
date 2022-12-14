@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "2b694c1c-ba16-44c0-9c61-0efed28a3124",
+		"name": "assignmnet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22919980"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"saurabh\",\r\n    \"email\": \"saurabh@gmail.com\",\r\n    \"password\":\"pass123\",\r\n    \"passwordConfirm\":\"pass123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"saurabh@gmail.com\",\r\n    \"password\":\"pass123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUsers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTljNGFlZjIxM2RhZTNmMTcwY2Q2MiIsImlhdCI6MTY3MTAzMzU5OCwiZXhwIjoxNjczNjI1NTk4fQ.o7_CrBd4mt7f-sveG2CYI-WmfVoRxMfz-dIRUA8IykA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/getUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getUsers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
